@@ -1,0 +1,40 @@
+.BlogError {
+	text-align: center;
+}
+
+.BlogError p {
+	color: #fff;
+	display: inline;
+	background-color:	#f77;
+	padding: 7px;
+	font-weight:bold;
+}
+
+.edit-post {
+	clear:both;
+	padding-top:10px;
+}
+
+.blogEntry {
+	margin: 10px 0 0;
+}
+
+h4.postTitle {
+	margin-top: 10px;
+}
+
+.blogSummary {
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+	
+	border-bottom: solid 1px #444444;
+}
+
+.left {
+	float: left;
+	margin: 0 10px 5px 0;	
+}
+.right {
+	float: right;
+	margin: 0 0 5px 10px;
+}
