@@ -26,7 +26,7 @@ class BlogEntryExtension extends DataExtension {
 		//$fields->addFieldToTab('Root.Images', $ImageField);
 		
 		// featured
-		//$fields->addFieldToTab('Root.Main', new CheckboxField('Featured'), 'Content');
+		$fields->addFieldToTab('Root.Main', new CheckboxField('Featured', 'Featured Post (display link in Featured box in sidebar)'), 'Content');
 
 	}
 	

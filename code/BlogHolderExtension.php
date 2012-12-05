@@ -9,9 +9,7 @@ class BlogHolderExtension extends DataExtension {
 	public function getFeaturedNews() {
 		return BlogEntry::get()->filter(array('Featured' => 1))->sort('Date DESC')->limit(3);
 	}
-	
-	
-	
+		
 	public function getTagsList() {
 		
 		$allTags = array();
