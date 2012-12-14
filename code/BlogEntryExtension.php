@@ -15,14 +15,14 @@ class BlogEntryExtension extends DataExtension {
 		
 		// Main Image
 		$ImageField = new UploadField('Image', 'Main Image');
-		$ImageField->getValidator()->allowedExtensions = array('jpg', 'gif', 'png');
+		$ImageField->getValidator()->allowedExtensions = array('jpg', 'jpeg', 'gif', 'png');
 		$ImageField->setConfig('allowedMaxFileNumber', 1);
 		$ImageField->setFolderName('Uploads/BlogEntries');
 		$fields->addFieldToTab('Root.Images', $ImageField);
 		
 		// Thumbnail Image
 		$ImageField = new UploadField('Thumbnail', 'Thumbnail Preview (square)');
-		$ImageField->getValidator()->allowedExtensions = array('jpg', 'gif', 'png');
+		$ImageField->getValidator()->allowedExtensions = array('jpg', 'jpeg', 'gif', 'png');
 		$ImageField->setConfig('allowedMaxFileNumber', 1);
 		$ImageField->setFolderName('Uploads/BlogEntryThumbs');
 		//$fields->addFieldToTab('Root.Images', $ImageField);
