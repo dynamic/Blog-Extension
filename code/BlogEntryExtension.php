@@ -51,5 +51,16 @@ class BlogEntryExtension extends DataExtension {
 	public function getMonthCreated() {
         return date('F Y', strtotime($this->owner->Date));
     }
+    
+    // resize Main image on detail
+    public function getHeroImage() {
+	    if ($this->owner->Image()) {
+		    if ($this->owner->Image()->getWidth() > 450 || $this->owner->Image()->getHeight() > 300) {
+			    return $this->owner->Image()->SetRatioSize(450,300);
+		    }
+		    return $this->Image();
+	    }
+	    return false;
+    }
  
 }
